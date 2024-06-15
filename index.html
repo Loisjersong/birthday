@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id="container">
-      <div class="card">
+      <div class="card" id="birthdayCard">
         <div class="outside">
           <div class="front">
             <p>Happy Birthday</p>
@@ -27,10 +27,24 @@
           <div class="back"></div>
         </div>
         <div class="inside">
-          <p>test test test test</p>
+          <p>Happy 20th Birthday Tricia Loreno! stay happy and stay pretty. May your birthday be as special as you are😘</p>
           <h1>🌷</h1>
         </div>
       </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var card = document.getElementById('birthdayCard');
+
+        // Debug: Log the card element
+        console.log(card);
+
+        // Add event listener for click event
+        card.addEventListener('click', function() {
+          console.log('Card clicked'); // Debug: Log when the card is clicked
+          card.classList.toggle('open');
+        });
+      });
+    </script>
   </body>
 </html>
